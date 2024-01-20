@@ -1,15 +1,30 @@
-### Project Title
-Explore US Bikeshare Data
+# Explore US Bikeshare Data
 
-### Date created
-20 January, 2024
 
-### Description
+
+## Description
 In this project, you will make use of Python to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. You will import the data and answer interesting questions about it by computing descriptive statistics. You will also see raw input presenting these statictics in an interactive way.
 
-### Files used
-[bikeshare.py](./bikeshare.py)
+## How to use
 
-### Credits
+### Prerequisites
+
+* Python 3
+* NumPy
+* Panda
+
+### Files used
+
+* [bikeshare.py](./bikeshare.py) (included in this project)
+* Bikeshare Data (you can download from [here](https://video.udacity-data.com/topher/2021/May/6094a7cc_all-project-files/all-project-files.zip))
+
+## Update history
+| Date | Updates | Commiter |
+|------|------|------|
+|2024-01-20| Draft published | @arisa-i |
+
+
+## Credits
 
 * This project is forked from [udacity/pdsnd_github](https://github.com/udacity/pdsnd_github) 
+* Blog: [README best practices](https://tianhaozhou.medium.com/readme-best-practices-7c9ad6c2303)
