@@ -22,7 +22,7 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # Get user input for city (chicago, new york city, washington).
     while city_chk==False:
-        city = input("\nWould you like to see data for Chicago, New York, or Washington?\n").lower()
+        city = input("\nWould you like to see data for Chicago, New York City, or Washington?\n").lower()
         if city in ('chicago','new york city','washington'):
             city_chk=True
         else:
