@@ -54,13 +54,13 @@ def get_filters():
             month='all'
             # Get user input for day of week (all, monday, tuesday, ... sunday).
             while day_chk==False:
-                day = input("\nWhich day - Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or Sunday?\n").title()
-                if day in ('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'):
+                day = input("\nWhich day - Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or Sunday?\n").lower()
+                if day in ('sunday','monday','tuesday','wednesday','thursday','friday','saturday'):
                     day_chk=True
                 else:
                     print("\nPlease check your input: ",day)
             print('-'*40)
-            print('OK! Let\'s explore the data for {} on {}.'.format(city.title(),day))
+            print('OK! Let\'s explore the data for {} on {}.'.format(city.title(),day.title()))
         else:
             print("\nPlease check your input: ",filter)
 
@@ -101,7 +101,7 @@ def load_data(city, month, day):
         df = df[df['month']==month]
 
     # Filter by day of week if applicable.
-    if day != 'All':
+    if day != 'all':
         # Filter by day of week to create the new dataframe.
         df = df[df['day_of_week']==day.title()]
 
